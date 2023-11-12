@@ -8,6 +8,8 @@ pipeline {
             steps {
                 // Your build steps go here
                 echo 'Building...'
+                cd myapp
+                pip install -r requirement.txt
             }
         }
 
@@ -16,6 +18,9 @@ pipeline {
                 // Your test steps go here
                 echo 'Testing...'
                 echo 'Testing pollSCM'
+                cd myapp
+                python3 hello.py
+                python3 hello.py--name=Jango
             }
         }
 
