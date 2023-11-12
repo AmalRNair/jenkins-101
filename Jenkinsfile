@@ -15,6 +15,7 @@ pipeline {
             steps {
                 // Your test steps go here
                 echo 'Testing...'
+                echo 'Testing pollSCM'
             }
         }
 
